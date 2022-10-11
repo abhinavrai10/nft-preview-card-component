@@ -43,8 +43,8 @@ body {
   z-index: 1;
 }
 .img-icon {
-  width: calc(100% - 2px);
-  height: calc(100% - 2px);
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
   position: absolute;
   border-radius: 0.5rem;
   top: 0;
