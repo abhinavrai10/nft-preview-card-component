@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  height: 27rem;
+  width: 18rem;
+  margin: auto;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0.1rem 0.01rem 0.5rem 1rem hsl(217, 55%, 10%),
+    1rem 0.2rem 0.7rem 2rem hsl(207, 62%, 10%);
+}
+
+.img-container {
+  height: 60%;
+  width: 100%;
+  background-color: hsl(178, 100%, 50%);
+  position: relative;
+  border-radius: 0.5rem;
+}
+.img {
+  position: relative;
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.img-icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 0.5rem;
+  top: 0;
+  background-color: hsl(178, 100%, 50%);
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+.img-icon img {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 5;
+}
+.img-icon:hover {
+  opacity: 0.5;
+}
+
+h1 {
+  color: white;
+  font-size: 1rem;
+}
+h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
+ul li:first-child {
+  color: hsl(178, 100%, 50%);
+}
+ul li:last-child {
+  color: hsl(215, 51%, 70%);
+}
+ul li img {
+  margin-right: 0.5rem;
+}
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+.avtar {
+  display: flex;
+  align-content: space-between;
+}
+.card .avtar img {
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  border: 1px solid hsl(215, 51%, 70%);
+  margin-right: 0.6rem;
+}
+.card .avtar p {
+  align-self: center;
+  font-size: 0.7rem;
+}
+.card .avtar span {
+  color: white;
+}
+.card .avtar span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
