@@ -31,7 +31,6 @@ body {
 .img-container {
   height: 60%;
   width: 100%;
-  background-color: hsl(178, 100%, 50%);
   position: relative;
   border-radius: 0.5rem;
 }
